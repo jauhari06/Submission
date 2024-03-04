@@ -41,6 +41,11 @@ image_stream = BytesIO()
 payment_chart.figure.savefig(image_stream, format='png', bbox_inches='tight')
 st.image(image_stream, width=800)
 
+st.markdown("""
+Grafik di atas menunjukkan distribusi jumlah pesanan berdasarkan jenis pembayaran. Setiap batang pada sumbu x mewakili jenis pembayaran, sedangkan sumbu y menunjukkan jumlah pesanan yang menggunakan metode pembayaran tersebut.
+
+""")
+
 st.title("Product")
 st.subheader("Grafik Product category")
 
@@ -56,4 +61,7 @@ image_stream = BytesIO()
 fig.savefig(image_stream, format='png', bbox_inches='tight')
 st.image(image_stream, width=1000)
 
+st.markdown("""
+Grafik di atas menunjukkan distribusi jumlah produk. Setiap batang pada sumbu x mewakili kategori produk, sedangkan sumbu y menunjukkan jumlah penualan .
 
+""")
